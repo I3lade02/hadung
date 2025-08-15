@@ -1,0 +1,1 @@
+export const BOOS_INTERVAL = 5;

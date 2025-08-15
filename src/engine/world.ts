@@ -7,7 +7,7 @@ export function initWorld(): World {
     const rooms = generateDungeon(rng);
     const player: BaseEntity = {
         id: 1, kind: 'player', pos: {x: rooms[0].x + rooms[0].w/2, y: rooms[0].y + rooms[0].h/2}, vel: {x: 0, y: 0},
-        radius: 10, angle: 0, hp: 100, maxHp: 100, speed: 140
+        radius: 10, angle: 0, hp: 100, maxHp: 100, speed: 140, fireRate: 8, nextFire: 0,
     };
 
     return {
